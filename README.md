@@ -48,6 +48,6 @@ export default MyComponent
 
 ```
 
-#License
+# License
 
 Moment.js is freely distributable under the terms of the [MIT license](https://github.com/moment/moment/blob/develop/LICENSE).
