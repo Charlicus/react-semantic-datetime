@@ -4,7 +4,7 @@ module.exports = {
   entry: './src/datetime.jsx',
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'index.js',
+    filename: 'react-semantic-ui.min.js',
     libraryTarget: 'commonjs2' // THIS IS THE MOST IMPORTANT LINE! :mindblow: I wasted more than 2 days until realize this was the line most important in all this guide.
   },
   mode:"production",
