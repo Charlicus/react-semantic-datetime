@@ -11,7 +11,7 @@ module.exports = {
         path: BUILD_DIR,
         filename: 'bundle.js',
     },
-    mode: "production",
+    mode: "development",
     resolve: {
         extensions: ['.js', '.jsx']
     },

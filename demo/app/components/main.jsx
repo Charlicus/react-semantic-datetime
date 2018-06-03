@@ -27,6 +27,7 @@ class Main extends React.Component{
                         value={moment(this.state.myDate).format('LLL')}
                         onClick={()=>this.setState({dateTimeOpen:true})}
                         disabled={this.state.dateTimeOpen}
+                        fluid
                     />
 
                     {this.state.dateTimeOpen && <ReactSemanticDatetime
