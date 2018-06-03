@@ -16,14 +16,14 @@ This module is intented to be use only for react-semantic-ui projects
 
 ## Utilization
 
-You can also see in the demo file for the code behind the GIF
+You can also see in the demo file for the code behind the GIF (Just open the index.html file for the demo)
 
 ```javascript
 
 import moment from 'moment';
 import DatetimePicker from 'react-semantic-datetime';
 
-moment.locale('en'); // Important for calendar localization including translation
+moment.locale('en'); // Important for calendar localization including translation (tested with 'fr' and 'en')
 
 class MyComponent extends React.Component{
     constructor(){
@@ -43,5 +43,7 @@ class MyComponent extends React.Component{
         )
     }
 }
+
+export default MyComponent
 
 ```
