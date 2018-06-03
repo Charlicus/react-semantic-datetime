@@ -7,7 +7,7 @@ Implementation of a datetime picker for react using pure semantic components and
 * Use momentjs for localization (no translation needed)
 
 
-* Core dependencies
+* Dependencies
 ** momentjs
 ** react
 ** semantic-ui (css)
