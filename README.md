@@ -7,6 +7,7 @@ Implementation of a datetime picker for react using pure semantic components and
 ![Alt Text](https://github.com/Charlicus/react-semantic-datetime/blob/master/demo/movie.gif)
 
 ## Dependencies
+* npm packages
 ** momentjs
 ** react
 ** semantic-ui (css)
