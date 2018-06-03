@@ -6,7 +6,7 @@ Implementation of a datetime picker for react using pure semantic components and
 * Pure react-semantic-ui components (no css)
 * Use momentjs for localization (no translation needed)
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/Charlicus/react-semantic-datetime/blob/master/demo/movie.gif)
 
 
 ## Dependencies
