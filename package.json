@@ -1,11 +1,9 @@
 {
   "name": "react-semantic-datetime",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Implementation of a datetime picker for react using pure semantic components and momentjs locals capabilities",
-  "main": "./src/datetime.jsx",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "./build/index.js",
+  "repository": "https://github.com/Charlicus/react-semantic-datetime",
   "keywords": [
     "react",
     "semantic",
@@ -15,6 +13,35 @@
     "responsive",
     "mobile"
   ],
-  "author": "chdebrabandere",
+  "peerDependencies": {
+    "react": "^16.4.0",
+    "semantic-ui-react": "^0.81.0",
+    "moment": "^2.22.2"
+  },
+  "dependencies": {
+    "react-dom": "^16.4.0",
+    "react": "^16.4.0",
+    "semantic-ui-react": "^0.81.0",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.1",
+    "moment": "^2.22.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "author": {
+    "name": "chdebrabandere",
+    "email": "charlicus@hotmail.com"
+  },
   "license": "ISC"
 }
