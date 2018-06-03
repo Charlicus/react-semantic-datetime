@@ -1,6 +1,6 @@
 {
   "name": "react-semantic-datetime",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Implementation of a datetime picker for react using pure semantic components and momentjs locals capabilities",
   "main": "./src/datetime.jsx",
   "scripts": {
