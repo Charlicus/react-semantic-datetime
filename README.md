@@ -47,3 +47,7 @@ class MyComponent extends React.Component{
 export default MyComponent
 
 ```
+
+#License
+
+Moment.js is freely distributable under the terms of the [MIT license](https://github.com/moment/moment/blob/develop/LICENSE).
