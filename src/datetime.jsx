@@ -73,7 +73,7 @@ class DateTimePicker extends React.Component{
     selectDay(day){
         if(this.props.time){
             this.setState({
-                navigationDate: moment(day),
+                navigationDate: moment(this.state.navigationDate).set('day',day),
                 zoom:'hour'
             });
         }
@@ -148,8 +148,9 @@ class DateTimePicker extends React.Component{
                                     key={col}
                                     style={{
                                         cursor:'pointer',
-                                        color:this.state.navigationDate.month()==moment(baseMonth).add(monthDelta,'month').month()?this.props.color:null,
-                                        fontWeight:this.state.navigationDate.month()==moment(baseMonth).add(monthDelta,'month').month()?'bold':null
+                                        backgroundColor:this.state.navigationDate.month()==moment(baseMonth).add(monthDelta,'month').month()?this.props.color:null,
+                                        fontWeight:this.state.navigationDate.month()==moment(baseMonth).add(monthDelta,'month').month()?'bold':null,
+                                        color:this.state.navigationDate.month()==moment(baseMonth).add(monthDelta,'month').month()?'white':null
                                     }}
                                     onClick={()=>{this.selectMonth(moment(baseMonth).add(monthDelta,'month').month())}}
                                 >
@@ -162,7 +163,6 @@ class DateTimePicker extends React.Component{
             })
         );
     }
-
 
     // Render Date Section
     renderDay(){
@@ -232,7 +232,7 @@ class DateTimePicker extends React.Component{
             <Table.Cell 
                 key={cellDay.format('YYMMDD')}
                 disabled={isCurrentMonth}
-                onClick={()=>this.selectDay(cellDay.format())}
+                onClick={()=>this.selectDay(cellDay.month())}
                 style={{
                     textDecoration:isToday?'underline':null,
                     fontWeight:isToday?'bold':null,
@@ -281,8 +281,9 @@ class DateTimePicker extends React.Component{
                                     key={col}
                                     style={{
                                         cursor:'pointer',
-                                        color:this.state.navigationDate.hour()==moment(baseHour).add(hourDelta,'hour').hour()?this.props.color:null,
-                                        fontWeight:this.state.navigationDate.hour()==moment(baseHour).add(hourDelta,'hour').hour()?'bold':null
+                                        backgroundColor:moment(this.state.navigationDate).hour()==moment(baseHour).add(hourDelta,'hour').hour()?this.props.color:null,
+                                        fontWeight:this.state.navigationDate.hour()==moment(baseHour).add(hourDelta,'hour').hour()?'bold':null,
+                                        color:moment(this.state.navigationDate).hour()==moment(baseHour).add(hourDelta,'hour').hour()?'white':null,
                                     }}
                                     onClick={()=>{this.selectHour(moment(baseHour).add(hourDelta,'hour').hour())}}
                                 >
@@ -331,8 +332,9 @@ class DateTimePicker extends React.Component{
                                     key={col}
                                     style={{
                                         cursor:'pointer',
-                                        color:this.state.navigationDate.minute()==moment(baseMinute).add(minuteDelta,'minute').minute()?this.props.color:null,
-                                        fontWeight:this.state.navigationDate.minute()==moment(baseMinute).add(minuteDelta,'minute').minute()?'bold':null
+                                        backgroundColor:this.state.navigationDate.minute()==moment(baseMinute).add(minuteDelta,'minute').minute()?this.props.color:null,
+                                        fontWeight:this.state.navigationDate.minute()==moment(baseMinute).add(minuteDelta,'minute').minute()?'bold':null,
+                                        color: this.state.navigationDate.minute()==moment(baseMinute).add(minuteDelta,'minute').minute()?'white':null,
                                     }}
                                     onClick={()=>{this.selectMinute(moment(baseMinute).add(minuteDelta,'minute').minute())}}
                                 >
@@ -345,7 +347,6 @@ class DateTimePicker extends React.Component{
             })
         );
     }
-
 
     // Final render
     render(){

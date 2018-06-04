@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import ReactSemanticDatetime from 'react-semantic-datetime';
+import ReactSemanticDatetime from './../../../build/react-semantic-ui.min.js';
 import { Container, Form, Header, Segment } from 'semantic-ui-react';
 
 moment.locale('en');
