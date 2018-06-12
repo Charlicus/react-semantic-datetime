@@ -117,7 +117,7 @@ class DateTimePicker extends React.Component{
                             <Icon size="big" color={this.props.color} name="chevron circle left" onClick={()=>this.previousYear()} style={{cursor:'pointer'}}/>
                         </Grid.Column>
                         <Grid.Column textAlign="center" verticalAlign="middle">
-                            <Header size="small"> {this.state.navigationDate.format('YYYY')}</Header>
+                            <Header size="small" style={{cursor:'pointer'}}> {this.state.navigationDate.format('YYYY')}</Header>
                         </Grid.Column>
                         <Grid.Column textAlign="right">
                             <Icon size="big" color={this.props.color} name="chevron circle right" onClick={()=>this.nextYear()} style={{cursor:'pointer'}}/>
@@ -174,7 +174,7 @@ class DateTimePicker extends React.Component{
                             <Icon size="big" color={this.props.color} name="chevron circle left" onClick={()=>this.previousMonth()} style={{cursor:'pointer'}}/>
                         </Grid.Column>
                         <Grid.Column textAlign="center" verticalAlign="middle" onClick={()=>this.selectZoom('month')}>
-                            <Header size="small"> {this.state.navigationDate.format('MMMM YYYY')}</Header>
+                            <Header size="small" style={{cursor:'pointer'}}> {this.state.navigationDate.format('MMMM YYYY')}</Header>
                         </Grid.Column>
                         <Grid.Column textAlign="right">
                             <Icon size="big" color={this.props.color} name="chevron circle right" onClick={()=>this.nextMonth()} style={{cursor:'pointer'}}/>
@@ -253,7 +253,7 @@ class DateTimePicker extends React.Component{
                 <Grid columns={1}>
                     <Grid.Row>
                         <Grid.Column textAlign="center" verticalAlign="middle" onClick={()=>this.selectZoom('day')}>
-                            <Header size="small"> {this.state.navigationDate.format('LL')}</Header>
+                            <Header size="small"style={{cursor:'pointer'}}> {this.state.navigationDate.format('LL')}</Header>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
@@ -304,7 +304,7 @@ class DateTimePicker extends React.Component{
                 <Grid columns={1}>
                     <Grid.Row>
                         <Grid.Column textAlign="center" verticalAlign="middle" onClick={()=>this.selectZoom('hour')}>
-                            <Header size="small"> {this.state.navigationDate.format('LLL')}</Header>
+                            <Header size="small" style={{cursor:'pointer'}}> {this.state.navigationDate.format('LLL')}</Header>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
