@@ -1,6 +1,6 @@
 {
   "name": "react-semantic-datetime",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Implementation of a datetime picker for react using pure semantic components and momentjs locals capabilities",
   "main": "./build/react-semantic-ui.min.js",
   "repository": "https://github.com/Charlicus/react-semantic-datetime",
