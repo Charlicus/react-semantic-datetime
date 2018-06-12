@@ -28,6 +28,7 @@ class Main extends React.Component{
                         onClick={()=>this.setState({dateTimeOpen:true})}
                         disabled={this.state.dateTimeOpen}
                         fluid
+                        time={true}
                     />
 
                     {this.state.dateTimeOpen && <ReactSemanticDatetime

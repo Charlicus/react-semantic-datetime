@@ -3,8 +3,9 @@
 Implementation of a datetime picker for react using pure semantic components and momentjs locals capabilities
 * Pure react-semantic-ui components (no css)
 * Use momentjs for localization (no translation needed)
+* Responsive
 
-![Gif animation displayed in github page](https://github.com/Charlicus/react-semantic-datetime/blob/master/demo/movie.gif)
+![Gif animation displayed on github page](https://github.com/Charlicus/react-semantic-datetime/blob/master/demo/movie.gif)
 
 ## Dependencies
 * momentjs
@@ -12,7 +13,7 @@ Implementation of a datetime picker for react using pure semantic components and
 * semantic-ui (css)
 * react-semantic-ui
 
-This module is intented to be use only for react-semantic-ui projects
+This module is intented to be used only for react-semantic-ui projects
 
 ## Utilization
 
@@ -38,7 +39,7 @@ class MyComponent extends React.Component{
                 color="teal" // optional (default:teal)
                 onChange={(value)=>{this.setState({myDate:value})}} // Mandatory
                 value={moment(this.state.myDate)} // Mandatory
-                time='true' // optional to show time selection, just a date picket if false (default:true)
+                time={true}// optional to show time selection, just a date picket if false (default:true)
             />
         )
     }
