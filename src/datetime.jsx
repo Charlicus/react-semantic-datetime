@@ -26,7 +26,7 @@ class DateTimePicker extends React.Component{
 
     componentDidMount(){
         this.setState({
-            navigationDate: this.props.moment
+            navigationDate: this.props.moment || moment()
         })
     }
     
@@ -83,8 +83,6 @@ class DateTimePicker extends React.Component{
             });
             this.props.onChange(moment(day));
         }
-        
-        //this.props.onChange(moment(day));
     }
 
     selectHour(hour){
