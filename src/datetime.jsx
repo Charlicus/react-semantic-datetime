@@ -71,17 +71,18 @@ class DateTimePicker extends React.Component{
     }
 
     selectDay(day){
+        console.log(day);
         if(this.props.time){
             this.setState({
-                navigationDate: moment(this.state.navigationDate).set('day',day),
+                navigationDate: moment(this.state.navigationDate).set('date',day),
                 zoom:'hour'
             });
         }
         else {
             this.setState({
-                navigationDate: moment(day)
+                navigationDate: moment(this.state.navigationDate).set('date',day)
             });
-            this.props.onChange(moment(day));
+            this.props.onChange(moment(this.state.navigationDate).set('date',day));
         }
     }
 
@@ -230,7 +231,7 @@ class DateTimePicker extends React.Component{
             <Table.Cell 
                 key={cellDay.format('YYMMDD')}
                 disabled={isCurrentMonth}
-                onClick={()=>this.selectDay(cellDay.month())}
+                onClick={()=>this.selectDay(cellDay.date())}
                 style={{
                     textDecoration:isToday?'underline':null,
                     fontWeight:isToday?'bold':null,
