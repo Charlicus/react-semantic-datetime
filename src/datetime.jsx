@@ -71,7 +71,6 @@ class DateTimePicker extends React.Component{
     }
 
     selectDay(day){
-        console.log(day);
         if(this.props.time){
             this.setState({
                 navigationDate: moment(this.state.navigationDate).set('date',day),
